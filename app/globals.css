@@ -1,0 +1,55 @@
+* {
+  /* reset + additional styling */
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", sans-serif;
+  /* something's wrong with the font; to fix */
+}
+
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+button {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
+
+h2 {
+  margin-bottom: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: black; /* to change */
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: grey; /* to change */
+}
+
+section {
+  height: calc(100vh - 200px);
+  padding: 100px 140px;
+}
+
+footer {
+  background-color: #fe99cc;
+  padding: 24px 0px;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 992px) {
+  section {
+    padding: 100px 60px;
+  }
+}

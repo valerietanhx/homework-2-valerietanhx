@@ -1,0 +1,169 @@
+.glass {
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* navbar */
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  backdrop-filter: blur(8px);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  list-style: none;
+}
+
+/* intro */
+
+.intro {
+  margin-top: -60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffddcc;
+  font-size: 40px;
+}
+
+.changingTitle {
+  cursor: pointer;
+  color: grey;
+}
+
+.changingTitle:hover {
+  font-style: italic;
+}
+
+/* about */
+
+.about {
+  background-color: #ffcccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.aboutImage {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 1s ease;
+}
+
+.aboutImage:hover {
+  transform: rotate(360deg);
+  cursor: pointer;
+}
+
+.aboutText > p:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+/* experience, projects cards */
+
+.experience {
+  background-color: #ffbbcc;
+  height: auto;
+}
+
+.projects {
+  background-color: #feaacc;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 200px;
+  border-radius: 20px;
+}
+
+.card > ul > li {
+  margin-left: 16px;
+}
+
+.cardTitle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  gap: 8px;
+}
+
+.cardTitleBold {
+  font-weight: 700;
+}
+
+.cardDate {
+  text-align: end;
+}
+
+.cardItem,
+.cardButtonWrapper {
+  display: flex;
+  gap: 12px;
+}
+
+.buttonLink {
+  border: 0;
+  border-radius: 4px;
+  padding: 4px 6px;
+  transition: all 0.5s ease;
+}
+
+.buttonLink:hover {
+  cursor: pointer;
+}
+
+.liveSite {
+  background-color: #f0f0f0;
+}
+
+.liveSite:hover {
+  background-color: #d8d8d8;
+}
+
+.githubRepo {
+  background-color: #ffddcc;
+}
+
+.githubRepo:hover {
+  background-color: #ffcccc;
+}
+
+/* responsiveness */
+
+@media (max-width: 992px) {
+  .about {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .projects {
+    height: auto;
+  }
+
+  .cardItem {
+    flex-direction: column;
+  }
+
+  .buttonLink {
+    width: fit-content;
+  }
+}
