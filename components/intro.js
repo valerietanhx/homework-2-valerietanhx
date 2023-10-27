@@ -37,11 +37,11 @@ export default function Intro() {
     : "I'm a ";
 
   return (
-    <section className={styles.intro} onClick={changeTitle}>
+    <section className={styles.intro}>
       <h1>Hi! I'm Valerie.</h1>
       <h1>
         <span className={styles.changingIntro}>{changingIntro} </span>
-        <span className={styles.changingTitle}>{title}.</span>
+        <span className={styles.changingTitle} onClick={changeTitle}>{title}.</span>
       </h1>
     </section>
   );
