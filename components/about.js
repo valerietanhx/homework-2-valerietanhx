@@ -1,12 +1,38 @@
+"use client";
+
+import { useState } from "react";
 import styles from "@/app/page.module.css";
-import Link from "next/link";
 
 export default function About() {
+  const images = [
+    "cat.jpg",
+    "mountain.jpg",
+    "books.jpg",
+    "museum.jpg",
+    "journal.jpg",
+  ];
+
+  const [imageIndex, setImageIndex] = useState(0);
+
+  const image = images[imageIndex];
+
+  const changeImage = () => {
+    let nextIndex = imageIndex + 1;
+    if (nextIndex >= images.length) {
+      nextIndex = 0;
+    }
+    setImageIndex(nextIndex);
+  };
+
   return (
     <section className={styles.about} id="about">
       <div>
-        {/* need to add js */}
-        <img src="/cat.jpg" alt="" className={styles.aboutImage} />
+        <img
+          src={image}
+          alt=""
+          className={styles.aboutImage}
+          onClick={changeImage}
+        />
       </div>
       <div className={styles.aboutText}>
         <h2>About</h2>
