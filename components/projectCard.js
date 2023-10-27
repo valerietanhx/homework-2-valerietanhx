@@ -7,13 +7,12 @@ export default function ProjectCard(props) {
     <div className={`${styles["glass"]} ${styles["card"]}`}>
       <div className={styles.cardTitle}>
         <div className={styles.cardItem}>
-          <h3 class={styles.cardTitleBold}>{props.title}</h3>
+          <h3 className={styles.cardTitleBold}>{props.title}</h3>
           <div className={styles.cardButtonWrapper}>
             {props.liveSiteLink != "" && (
               <button
-            //   onclick not working... same for below
-                class={`${styles["buttonLink"]} ${styles["liveSite"]}`}
-                onclick={()=> window.open(props.liveSiteLink, '_blank')}
+                className={`${styles["buttonLink"]} ${styles["liveSite"]}`}
+                onClick={()=> window.open(props.liveSiteLink, '_blank')}
                 type="button"
                 target="_blank"
               >
@@ -22,15 +21,15 @@ export default function ProjectCard(props) {
             )}
 
             <button
-              class={`${styles["buttonLink"]} ${styles["githubRepo"]}`}
-              onclick={()=> window.open(props.githubRepoLink, '_blank')}
+              className={`${styles["buttonLink"]} ${styles["githubRepo"]}`}
+              onClick={()=> window.open(props.githubRepoLink, '_blank')}
               type="button"
             >
               GitHub Repo
             </button>
           </div>
         </div>
-        <h3 class={styles.cardDate}>{props.date}</h3>
+        <h3 className={styles.cardDate}>{props.date}</h3>
       </div>
       <ul>
         {props.items.map((item, index) => {
