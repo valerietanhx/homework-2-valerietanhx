@@ -2,6 +2,9 @@
 
 import { useState } from "react";
 import styles from "@/app/page.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function About() {
   const images = [
@@ -50,16 +53,17 @@ export default function About() {
           stories, while also exploring information science and picking up web
           development.
         </p>
-        {/* not showing up; need to figure out fontawesome. commenting out for now */}
-        {/* <a href="https://www.linkedin.com/in/valerietanhx/">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/valerietanhx">
-          <i className="fa-brands fa-github"></i>
-        </a>
-        <a href="mailto:valerietanhx@gmail.com">
-          <i className="fa-solid fa-envelope"></i>
-        </a> */}
+        <div className={styles.aboutIcons}>
+          <a href="https://www.linkedin.com/in/valerietanhx/">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+          <a href="https://github.com/valerietanhx">
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+          <a href="mailto:valerietanhx@gmail.com">
+            <FontAwesomeIcon icon={faEnvelope} />
+          </a>
+        </div>
       </div>
     </section>
   );

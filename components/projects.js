@@ -6,7 +6,6 @@ export default function Projects() {
     <section className={styles.projects} id="projects">
       <h2>Projects</h2>
       <div className={styles.cardContainer}>
-        {/* links not working... to fix */}
         <ProjectCard
           title="Copydf"
           liveSiteLink="https://valerietanhx.github.io/copydf/"

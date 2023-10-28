@@ -5,7 +5,6 @@ import About from "@/components/about";
 import Experience from "@/components/experience";
 import Projects from "@/components/projects";
 import Footer from "@/components/footer";
-import styles from "./page.module.css";
 
 export default function Home() {
   return (

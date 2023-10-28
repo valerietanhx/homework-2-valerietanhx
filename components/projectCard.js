@@ -14,7 +14,6 @@ export default function ProjectCard(props) {
                 className={`${styles["buttonLink"]} ${styles["liveSite"]}`}
                 onClick={()=> window.open(props.liveSiteLink, '_blank')}
                 type="button"
-                target="_blank"
               >
                 Live Site
               </button>
