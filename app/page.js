@@ -16,10 +16,6 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Quicksand:wght@500;700&display=swap"
           rel="stylesheet"
         />
-        <script
-          src="https://kit.fontawesome.com/a30ce38d49.js"
-          crossOrigin="anonymous"
-        ></script>
       </Head>
       <main>
         <Navbar />
