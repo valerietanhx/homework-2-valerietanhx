@@ -9,7 +9,7 @@ export default function Experience() {
         <ExperienceCard
           title="Data Reporter"
           company="The Daily Tar Heel"
-          date="Sep 2023 – Present"
+          date="Sep 2023 – Dec 2023"
           items={[
             "Source for data and create data visualisations for newsworthy stories in Flourish and Datawrapper",
           ]}
